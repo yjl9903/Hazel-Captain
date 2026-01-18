@@ -7,8 +7,11 @@ import Unocss from 'unocss/vite';
 import Icons from 'unplugin-icons/vite';
 import Info from 'unplugin-info/vite';
 import Analytics from 'unplugin-analytics/vite';
+import { config } from 'dotenv';
 
 import fetchCaptain from './plugin';
+
+config({ path: path.join(__dirname, '../.env') });
 
 const ruid = +(process.env.RUID ?? 477317922);
 
