@@ -2,11 +2,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build app",
-    "dev": "vite app",
-    "format": "prettier --write app/**/*.{ts,vue}",
-    "preview": "vite preview app",
-    "test": "vitest app"
+    "build": "ROOM_ID=1713546334 RUID=1298779265 vite build app",
+    "dev": "ROOM_ID=1713546334 RUID=1298779265 vite app",
+    "format": "ROOM_ID=1713546334 RUID=1298779265 prettier --write app/**/*.{ts,vue}",
+    "preview": "ROOM_ID=1713546334 RUID=1298779265 vite preview app"
   },
   "dependencies": {
     "csv-parse": "^5.5.5",
